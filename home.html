@@ -1,0 +1,206 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
+    </head>
+    <body>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Righteous');
+        body {
+                width: 100%;
+            height: 100%;
+            background: url("b1.gif") no-repeat center center fixed;
+            font-family: 'Righteous', cursive;
+            margin: 0;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+        h2{
+            text-align: center;
+            color:#fff;
+        }
+        h1 {
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            font-size: 3em;
+            letter-spacing: 3px;
+            color: #fff;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+        }
+
+        h1 span {
+            font-family: 'Righteous', cursive;
+            letter-spacing: 0;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        h1 span a {
+            color: #fff;
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Righteous);
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  }
+
+html, body {
+  height: 100%;
+  }
+  body {
+    text-align: center;
+    background-color: hsla(230,40%,50%,1);
+    }
+  body:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    height: 100%;
+    }
+
+h1 {
+
+  color: white;
+  font-family: 'Righteous', serif;
+  top:20%;
+  font-size: 3em; 
+  text-shadow: .03em .10em 0 hsla(230,40%,50%,1);
+  animation: fadeInDown 5s ease;
+  }
+
+  @keyframes fadeInDown {
+
+    0% {opacity: 0;} // CSS properties at start
+	100% {opacity: 100;} // CSS properties at end
+	}  
+}
+
+  h1:after {
+    text-shadow: none;
+    background-image:
+      linear-gradient(
+        45deg,
+        transparent 45%,
+        hsla(48,20%,90%,1) 45%,
+        hsla(48,20%,90%,1) 55%,
+        transparent 0
+        );
+    background-size: .05em .05em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    animation: shad-anim 15s linear infinite;
+    }
+
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  0% {background-position: 100% -100%}
+  }
+
+        /* <- Demo Stuff Start */
+
+body{
+  font-family: 'Righteous', cursive;
+  font-size: 1.5em;
+  margin:0;
+}
+body:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: -moz-linear-gradient(top left, rgba(0, 47, 75, 0.75), rgba(47, 245, 170, 0.1));
+  background-image: -ms-linear-gradient(top left, rgba(0, 47, 75, 0.75), rgba(47, 245, 170, 0.1));
+  background-image: -webkit-linear-gradient(top left, rgba(0, 47, 75, 0.75), rgba(53, 238, 167, 0.1));
+  background-image: -o-linear-gradient(top left, rgba(0, 47, 75, 0.75), rgba(47, 245, 170, 0.1));
+  background-image: linear-gradient(to bottom right, rgba(0, 47, 75, 0.75), rgba(47, 245, 170, 0.1));
+  background-size: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 40vw;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #0000;
+  border-radius: 10px;
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+.btn:hover {
+  background-position: right center;
+  outline:none; 
+  text-decoration:none;/* change the direction of the change here */
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  outline:none; 
+  text-decoration:none;
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.btn-3 {
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  outline:none; 
+  text-decoration:none;
+}
+
+.btn-4 {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  outline:none; 
+  text-decoration:none;
+}
+
+.btn-5 {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+}
+
+
+/* Magic Stuff End -> */
+
+        </style>
+        <h1 data-shadow='Color Guessing game!'>Color Guessing game!</h1>
+
+        <div class="container">
+                <a href="index.html" class="btn btn-3">Play ></a> 
+                <a class="btn btn-4">Info ></a> 
+        </div>
+        <script></script>
+
+    </body>
+</html>
