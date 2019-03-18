@@ -1,74 +1,43 @@
 <html>
-    <head></head>
-    <body>
-      <center>
-        <link rel="stylesheet" href="style.css">
-<div class="container-fluid header">
-  <div class="row"></div>
-  <h1 class="heading text-center">The <p><span id="colorDisplay">RGB</span></p> Color Guessing Game</h1>
-
-  <div class="container-fluid text-center" id="optionsBar">
-    <button class="btn btn-md btn-link" id="reset">New Colors</button><span id="message"></span>
-    <button class="btn btn-md btn-link mode">Easy</button>
-    <button class="btn btn-md btn-link mode selected">Hard</button>
-    <button class="btn btn-md btn-link mode">Death Mode</button>
-  </div>
-</div>
-<div class="container">
-  <div class="row"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-  <div class="col-md-4 square"></div>
-</div>
-<script src="cal.js">
-
-
-</script>
-</center>
-    </body>
+  <head>
+    <iframe src="sound1.mp3" style="display: none;" loop="True"></iframe>
+    <title>RGB Guessing Game
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link type="text/javascript" href="cal.js">
+  </head>
+  <body>
+    <h1><span class="title">Colors Geussing Game</span>
+      <br>
+    <span  id="colourDisplay"></span>
+    </h1>
+    
+    
+  
+    <div class="bar">
+      <button id="restartBtn" class="msgDisplay">Next Colors</button>
+      
+      <button id="easyBtn" class="btns">Easy</button>
+      <button id="hardBtn" class="selected btns">Hard</button>
+      <span class="msgResult" id="result"></span>
+    </div>
+    
+    <div class="colourCode">Score: <span id="score">0<span></div>
+    <div class="colourCode"><span  id="colourDisplay"></span></div>
+    
+    <div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    </div>
+    
+    
+    
+    <script src="cal.js">
+    </script>
+  </body>
 </html>
