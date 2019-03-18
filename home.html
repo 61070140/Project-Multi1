@@ -1,7 +1,12 @@
 <html>
     <head>
+      <link rel="icon" 
+            type="image/ico" 
+            href="icon.ico">  
             <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
             <iframe src="sound1.mp3" style="display: none;" loop="True"></iframe>
+            <title>Color Guessing game</title>
+                 
     </head>
     <body>
     <style>
@@ -163,6 +168,7 @@ body:before {
   width: 40vw;
   margin: 0 auto;
   min-height: 100vh;
+  animation: bounceIn 2s ease;
 }
 .btn {
   flex: 1 1 auto;
@@ -202,6 +208,7 @@ body:before {
   background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
   outline:none; 
   text-decoration:none;
+  animation: fadeInDown 2s ease;
 }
 
 .btn-4 {
@@ -212,6 +219,58 @@ body:before {
 
 .btn-5 {
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
